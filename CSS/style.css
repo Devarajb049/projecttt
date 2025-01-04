@@ -1,0 +1,163 @@
+:root {
+    --primary: #336699;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.bg {
+    background-color: var(--primary);
+}
+
+.clr {
+    color: var(--primary);
+}
+
+.tw {
+    text-wrap: wrap;
+}
+
+::placeholder {
+    color: black;
+}
+
+.btn-primary {
+    background-color: var(--primary) !important;
+    width: 100%;
+}
+
+/*Admin Page*/
+.section-1 {
+    background-image: url('/IMG/Admin/Adminnn.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 82vh;
+    width: 100%;
+}
+
+input {
+    width: 100%;
+    height: 35px;
+    border: none;
+    border-bottom: 2px solid var(--primary);
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+form {
+    background: rgb(255, 255, 255, 0.8);
+    border-radius: 10px;
+    border: 1px solid var(--primary);
+
+}
+
+/*Menu for Slecting Year(I,II,III)*/
+
+.fa-solid {
+    font-size: 150%;
+    cursor: pointer;
+}
+
+.menu-overlay {
+    position: fixed;
+    top: 55;
+    left: 0;
+    height: 100%;
+    width: 25%;
+    background-color: var(--primary);
+    color: white;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: -2px 2px 5px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.menu-overlay ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-overlay ul li {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.menu-overlay ul li a,
+.logout a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+
+.d-none {
+    display: none !important;
+}
+
+#menu-close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 1100;
+}
+
+ul li a:hover {
+    color: var(--primary);
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.logout:hover {
+    background-color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    color: var(--primary);
+}
+
+/*Student Details Page*/
+.section-2 {
+    background-image: url('/IMG/Student/Student_page_BG.jpg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 82vh;
+    width: 100%;
+}
+
+.form-select {
+    width: 95%;
+    height: 35px;
+    border: none;
+    border-radius: 0;
+    border-bottom: 2px solid var(--primary);
+    background-color: transparent;
+    cursor: pointer;
+    outline: none;
+}
+
+/*Media Query for Header*/
+@media screen and (max-width: 576px) {
+    header .logos {
+        width: 25%;
+        height: 25%;
+    }
+
+    header .text-white {
+        font-size: 10px;
+    }
+
+}
